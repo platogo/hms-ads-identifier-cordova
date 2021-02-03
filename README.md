@@ -1,0 +1,1 @@
+# hms-ads-identifier-cordova
