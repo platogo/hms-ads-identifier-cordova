@@ -1,0 +1,43 @@
+{
+    "name": "hms-ads-identifier-cordova",
+    "description": "Cordova HMS Ads Plugin",
+    "version": "1.0.0",
+    "main": "./www/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/platogo/hms-ads-identifier-cordova",
+        "directory": "hms-ads-identifier-cordova"
+    },
+    "bugs": "https://github.com/platogo/hms-ads-identifier-cordova/issues",
+    "license": "Apache-2.0",
+    "licenseFilename": "LICENCE",
+    "readmeFilename": "README.md",
+    "cordova": {
+        "id": "hms-ads-identifier-cordova",
+        "platforms": [
+            "android"
+        ]
+    },
+    "keywords": [
+        "cordova",
+        "ecosystem:cordova",
+        "cordova-android",
+        "ads",
+        "hms-ads",
+        "huawei-ads",
+        "hms",
+        "huawei"
+    ],
+    "files": [
+        "hooks",
+        "ionic-native",
+        "src",
+        "www",
+        "LICENCE",
+        "package.json",
+        "plugin.xml",
+        "README.md"
+    ],
+    "dependencies": {},
+    "devDependencies": {}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="hms-ads-identifier-cordova" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>HMS Ads Identifier</name>
+	<description>Cordova HMS Ads Identifier Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,ads,hms-ads,huawei-ads,hms,huawei</keywords>
+
+	<platform name="android">
+		<hook type="after_plugin_install" src="hooks/after_plugin_install.js"/>
+		<hook type="before_plugin_uninstall" src="hooks/before_plugin_uninstall.js"/>
+
+		<config-file target="config.xml" parent="/*">
+			<feature name="HMSAds">
+				<param name="android-package" value="com.huawei.hms.cordova.ads.HMSAds"/>
+			</feature>
+		</config-file>
+
+		<framework src="com.huawei.hms:ads-identifier:3.4.35.300"/>
+		<framework src="src/android/build-extras.gradle" custom="true" type="gradleReference"/>
+
+	</platform>
+</plugin>
