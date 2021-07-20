@@ -17,6 +17,29 @@
 def pluginMinSdk = 19
 def needAGC = false;
 
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://developer.huawei.com/repo/' }
+    }
+
+    dependencies {
+        classpath 'com.huawei.agconnect:agcp:1.4.2.301'
+    }
+}
+
+repositories{
+    maven { url 'https://developer.huawei.com/repo/' }
+}
+
+dependencies {
+    implementation 'com.huawei.agconnect:agcp:1.4.2.301'
+}
+
+
 try {
     // Use try-catch to check that project's runtime is Cordova
     if (rootProject.ext.minSdkVersion < pluginMinSdk) {
